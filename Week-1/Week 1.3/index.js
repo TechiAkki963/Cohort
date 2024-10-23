@@ -51,3 +51,44 @@ function getLength (str){
 }
 getLength('Hello World')
 
+
+//Arrays
+
+const arr = [1,2,3]
+arr.push(2)
+console.log(arr) //[1,2,3,2]
+
+arr.unshift(5)
+console.log(arr)  // [5,1,2,3,2]
+
+arr.shift()
+console.log(arr) // [1,2,3,2]
+
+const arr2 = [4,5,6]
+const finalarr = arr.concat(arr2)
+console.log(finalarr)
+
+//Foreach
+const num = [10,20,30]
+
+function eachNum(num){
+    console.log(num)
+}
+num.forEach(eachNum)
+
+
+// Classes
+class Species{
+    constructor(name, legCount, speaks ){
+        this.name = name;
+        this.legCount = legCount;
+        this.speaks=speaks
+    }
+
+    speak(){
+        console.log(`hi there ${this.speaks}`)
+    }
+}
+
+const dog = new Species('dog',4,'bhow bhow')
+dog.speak()
