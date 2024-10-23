@@ -84,7 +84,7 @@ class Species{
         this.legCount = legCount;
         this.speaks=speaks
     }
-
+    static 
     speak(){
         console.log(`hi there ${this.speaks}`)
     }
